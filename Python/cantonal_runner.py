@@ -35,6 +35,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 wiki_url = 'https://en.wikipedia.org/wiki/Taxation_in_Switzerland'
+#To scrape Wikipedia, https://sateesh110.medium.com/how-to-scrape-wikipedia-table-using-python-beautiful-soup-cd0d8ee1a319 was used
+#as a reference
 s = requests.Session()
 response = s.get(wiki_url, timeout = 10)
 soup = BeautifulSoup(response.content, 'html.parser')
